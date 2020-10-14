@@ -5,3 +5,5 @@
 *.elf
 
 .DS_Store
+.vscode
+Assignment 1

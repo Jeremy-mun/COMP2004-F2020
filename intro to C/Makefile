@@ -1,7 +1,7 @@
-CFLAGS=-Wall -Wextra -Wpedantic --debug -lm
-CC=gcc
-# CFLAGS=-Weverything --debug
-# CC=clang
+# CFLAGS=-Wall -Wextra -Wpedantic --debug -lm
+# CC=gcc
+CFLAGS=-Weverything --debug
+CC=clang
 
 SRC=$(wildcard *.c)
 OBJS=$(SRC:%.c=%.o)

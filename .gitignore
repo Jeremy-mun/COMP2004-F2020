@@ -4,6 +4,6 @@
 *.obj
 *.elf
 
-.DS_Store
-.vscode
+**/.DS_Store
+**/.vscode
 Assignment 1

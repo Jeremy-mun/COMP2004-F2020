@@ -25,6 +25,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include "../log.c/src/log.h"
 
 void producer(void);
 void consumer(void);
@@ -32,6 +33,7 @@ void consumer(void);
 int main() {
   pid_t pid;
   pid = fork();
+
   if( pid < 0){
     fprintf(stderr, "Fork failed\n");
     return 1;

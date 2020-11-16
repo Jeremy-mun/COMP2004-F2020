@@ -8,20 +8,19 @@
       "name": "(lldb) Launch",
       "type": "lldb",
       "request": "launch",
-      "program": "${workspaceFolder}/src/Assignment 1/q3",
+      "program": "~/Documents/credentials/CS2004/src/quiz1/q14-solution",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb"
-    },
-
+    }, 
     {
       "type": "lldb",
       "request": "launch",
       "name": "Debug",
-      "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+      "program": "~/Documents/credentials/CS2004/src/quiz1/q14-solution",
       "args": [],
       "cwd": "${workspaceFolder}"
     }

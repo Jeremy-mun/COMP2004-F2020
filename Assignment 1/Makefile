@@ -5,16 +5,15 @@ CC=clang
 
 SRC=$(wildcard *.c) ../log.c/src/log.c
 OBJS=$(SRC:%.c=%.o)
-PROGS=fork
-PROGS+=shm-producer shm-consumer shm-fork
-PROGS+=unixpipes
-PROGS+=threads
+PROGS=q1 q2 q3
 
 all: $(PROGS)
 
 $(OBJS): $(SRC)
 
-shm-fork: shm-fork.o ../log.c/src/log.o
+q2: q2.o ../log.c/src/log.o
+
+q3: q3.o ../log.c/src/log.o pointnode.o
 
 %: %.o
 	$(CC) $(CFLAGS) -o $@ $^

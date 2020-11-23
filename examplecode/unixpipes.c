@@ -22,14 +22,14 @@ int main(void) {
   char read_msg[BUFFER_SIZE];
   pid_t pid;
 
-  /* Each pipe has a read and write end.  The defines above are a good
+  /** Each pipe has a read and write end.  The defines above are a good
    * way to use mnemonics instead of remembering which end is for
    * reading and which for writing
    */
   int fd[2];
 
   /* create the pipe */
-  /* Because fd is an array, using the variable without an index passes the
+  /** Because fd is an array, using the variable without an index passes the
    * value of the memory address, in other words, the pointer.  Pipe takes
    * a pointer as an argument so the types match.
    * This call shows a common C-ism.  Pass pointers and return an int error
@@ -43,7 +43,7 @@ int main(void) {
   /* now fork a child process */
   pid = fork();
 
-  /* Both processes now start running from here
+  /** Both processes now start running from here
    * Both processes will check for a correct PID
    */
   if (pid < 0) {

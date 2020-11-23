@@ -5,7 +5,7 @@ CC=clang
 
 SRC=$(wildcard *.c)
 OBJS=$(SRC:%.c=%.o)
-PROGS=pidmanager
+PROGS=q3-pidmanager
 
 all: $(PROGS)
 

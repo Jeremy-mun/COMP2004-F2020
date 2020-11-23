@@ -1,8 +1,9 @@
-#include "../log.c/src/log.h"
-#include "pointnode.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "../log.c/src/log.h"
+#include "pointnode.h"
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdouble-promotion"
@@ -39,8 +40,7 @@ int main() {
         dist = hypotf(i->x - temp->x, i->y - temp->y);
         totaldistance += dist;
         log_trace("Running total length is: %.2f", totaldistance);
-        printf("%d,%d - %d,%d : %.2f\n", i->x, i->y, temp->x, temp->y,
-               dist);
+        printf("%d,%d - %d,%d : %.2f\n", i->x, i->y, temp->x, temp->y, dist);
         i->next = temp;
         i = temp;
       }
